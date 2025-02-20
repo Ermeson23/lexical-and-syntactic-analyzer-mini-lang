@@ -6,18 +6,16 @@ Este documento apresenta o desenvolvimento de um analisador léxico e sintático
 ## Objetivo
 O objetivo deste trabalho é criar um programa que possa processar código-fonte, identificar tokens e validar a estrutura sintática das instruções.
 
-# Documentação do Analisador Léxico e Sintático
-
 ## O que foi feito no trabalho
 
 Neste trabalho, foi desenvolvido um analisador léxico e sintático para uma simples linguagem. O projeto foi modularizado em quatro componentes principais:
 
 - **Lexer**: Analisa o código-fonte e converte o texto em uma lista de tokens.
 - **Parser**: Realiza a análise sintática e verifica se os tokens seguem as regras da gramática da linguagem.
-- **Tokens**: Define os tipos de tokens reconhecidos pelo lexer, como palavras reservadas, números, identificadores, operadores, colchetes chaves e ponto e vírgula.
+- **Tokens**: Define os tipos de tokens reconhecidos pelo lexer, como palavras reservadas, números, identificadores, operadores, colchetes, chaves e ponto e vírgula.
 - **Main**: Representa o ponto de entrada do programa. Ele é responsável por ler o código-fonte, processá-lo e analisá-lo.
 
-Esta estrutura modular foi escolhida pois ela permite uma melhor organização do código, o que facilita em futuras expansões e manutenções.
+Esta estrutura modular foi escolhida pois ela permite uma melhor organização do código, o que facilita futuras expansões e manutenções.
 
 ## Como o programa funciona
 
@@ -62,7 +60,7 @@ Erro de sintaxe! Problema em ('SEMICOLON', ';')
 Durante o desenvolvimento do projeto, algumas das dificuldades encontradas foram:
 
 - Definir uma gramática que cobrisse as construções da linguagem sem gerar ambiguidades.
-- Implementar corretamente a precedência de dos tipos de tokens.
+- Implementar corretamente a precedência dos tipos de tokens.
 - Implementar corretamente a precedência dos operadores matemáticos.
 - Lidar com blocos aninhados, como estruturas `if-else` e loops `while`.
 
